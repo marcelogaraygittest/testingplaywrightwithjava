@@ -31,6 +31,15 @@ public class LoginPage {
         ClickLogin();
         return new DashboardPage(this.page);
     }
+    public DashboardPage clickingLoginButton() {
+        ClickLogin();
+        return new DashboardPage(this.page);
+    }
+
+    public void fillingCredentials(String userName, String password) {
+        userNameInput.fill(userName);
+        passwordInput.fill(password);
+    }
 
     public String verifyTitle() {
         return page.title();

@@ -45,7 +45,7 @@ public class LoginPageTest {
     }
 
     @Test
-    public void mensajDeErrorEsMostradoCuandoEstanVaciasLosCamposDeUsernameAndPassword(){
+    public void mensajeDeErrorEsMostradoCuandoEstanVaciasLosCamposDeUsernameAndPassword(){
         login.ClickLogin();
 
         Assertions.assertEquals("Epic sadface: Username is required", login.GetErrorMessageLogin());
